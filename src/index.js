@@ -8,7 +8,19 @@ import {data} from './books'
 import SpecificBook from './Book'
 import {greeting} from './testing/testing'
 
-function BookList() {
+/*
+JSX rules
+-> return single element
+-> div / section / article or fragment
+-> use camelCase for html attributes
+-> className instead of class
+-> close every element
+-> formatting
+
+
+*/
+
+function BookList() {  // you need to capitalize the name. for React to know it is a component. 
   console.log(greeting);
   return (
     <section className='booklist'>
@@ -21,4 +33,4 @@ function BookList() {
 
 
 
-ReactDom.render(<BookList />, document.getElementById('root'));
+ReactDom.render(<BookList />, document.getElementById('root')); // self close is necessary for html tags. 
